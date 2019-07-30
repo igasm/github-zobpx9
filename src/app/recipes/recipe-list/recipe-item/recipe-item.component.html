@@ -1,1 +1,7 @@
-<p>recipe-item works!</p>
+<div class="float-left">
+  <h4 class="mb-1">{{ recipeItem.name }}</h4>
+  <p class="mb-1">{{ recipeItem.description }}</p>
+</div>
+<span class="float-right">
+  <img src="{{ recipeItem.imagePath }}" alt="{{ recipeItem.name }}" class="img-responsive" style="max-height: 50px;">
+</span>
