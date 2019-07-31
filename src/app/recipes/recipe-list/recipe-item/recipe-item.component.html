@@ -1,7 +1,11 @@
-<div class="float-left">
-  <h4 class="mb-1">{{ recipeItem.name }}</h4>
-  <p class="mb-1">{{ recipeItem.description }}</p>
+<div class="list-group">
+  <a href="#" (click)="onClick()" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="float-left">
+      <h4 class="mb-1">{{ recipeItem.name }}</h4>
+      <p class="mb-1">{{ recipeItem.description }}</p>
+    </div>
+    <span class="float-right">
+      <img src="{{ recipeItem.imagePath }}" alt="{{ recipeItem.name }}" class="img-responsive" style="max-height: 50px;">
+    </span>
+  </a>
 </div>
-<span class="float-right">
-  <img src="{{ recipeItem.imagePath }}" alt="{{ recipeItem.name }}" class="img-responsive" style="max-height: 50px;">
-</span>
